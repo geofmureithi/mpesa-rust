@@ -1,0 +1,27 @@
+{
+  "name": "node_bindings",
+  "version": "0.1.0",
+  "description": "mpesa node.js bindings",
+  "main": "index.node",
+  "scripts": {
+    "build": "cargo-cp-artifact -nc index.node -- cargo build --message-format=json-render-diagnostics",
+    "install": "npm run build",
+    "test": "cargo test"
+  },
+  "author": "collinsmuriuki",
+  "license": "MIT",
+  "devDependencies": {
+    "cargo-cp-artifact": "^0.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/collinsmuriuki/mpesa-rust.git"
+  },
+  "keywords": [
+    "api"
+  ],
+  "bugs": {
+    "url": "https://github.com/collinsmuriuki/mpesa-rust/issues"
+  },
+  "homepage": "https://github.com/collinsmuriuki/mpesa-rust#readme"
+}

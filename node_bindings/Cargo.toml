@@ -1,0 +1,20 @@
+[package]
+name = "node_bindings"
+version = "0.1.0"
+description = "mpesa node.js bindings"
+authors = ["collinsmuriuki"]
+license = "MIT"
+edition = "2018"
+exclude = ["index.node"]
+
+[lib]
+crate-type = ["cdylib"]
+
+[dependencies.neon]
+version = "0.8"
+default-features = false
+features = ["napi-6", "event-queue-api", "try-catch-api"]
+
+[dependencies.mpesa]
+version = "0.4.0"
+path = "../mpesa_core"
