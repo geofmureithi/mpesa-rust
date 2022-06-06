@@ -3,7 +3,7 @@
 <p>
    <a href="https://crates.io/crates/mpesa" target="_blank">
      <img alt="Version" src="https://img.shields.io/crates/v/mpesa" />
-   </a>
+   </a> 
   <a href="https://docs.rs/mpesa" target="_blank">
     <img alt="Documentation" src="https://docs.rs/mpesa/badge.svg" />
   </a>
